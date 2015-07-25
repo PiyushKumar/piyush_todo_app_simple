@@ -1,0 +1,15 @@
+<title>Piyush's Todo App </title>
+<div class="container">
+  <div class="row">
+    <div class="span4">
+      <h1>Piyush Dummy Todo App</h1>
+      <hr>
+      <p>Your everyday todos here</p>
+      <div class="well">
+        <% @todo_items.each do |t| %>
+            <li> <%= t.todo_item %> </li>
+        <% end %>
+      </div> <!-- well -->
+    </div> <!-- span4 -->
+  </div> <!-- row -->
+</div> <!-- co  ntainer -->
