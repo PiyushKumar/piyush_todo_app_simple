@@ -24,7 +24,7 @@ class TodosController < ApplicationController
   def complete
     params[:todos_checkbox].each do |check|
       todo_id = check
-      t = Todo.find_by_id(todo_id)
+        t = Todo.find_by_id(todo_id)
       t.update_attribute(:completed, true)
       #code to update the status here
     end
