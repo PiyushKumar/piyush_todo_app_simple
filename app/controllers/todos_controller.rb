@@ -9,7 +9,8 @@ class TodosController < ApplicationController
     #delete logic goes in here
   end
 
-  #params is a reserved variable stored within controller to pass value as a key-val pair
+  #params is a reserved variable stored within controller to pass value as a key-val pair. They come from the 
+  #browser and are encoded in the URL.
   def add
     todo = Todo.create(:todo_item => params[:todo][:todo_item])
     unless todo.valid?
