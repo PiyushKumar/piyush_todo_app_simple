@@ -3,7 +3,6 @@ class TodosController < ApplicationController
     @todo_items = Todo.all
     #render :nothing => true
     @new_todo = Todo.new
-
   end
 
   def delete
